@@ -22,9 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const daysOfWeek = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
         daysOfWeek.forEach(day => {
             const dayDiv = document.createElement('div');
-            dayDiv.classList.add('day');
+            dayDiv.classList.add('day', 'day-name');
             dayDiv.textContent = day;
-            dayDiv.style.fontWeight = 'bold';
             calendar.appendChild(dayDiv);
         });
 
@@ -35,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Fill in the blank spaces before the first day
         for (let i = 0; i < firstDay; i++) {
             const blankDiv = document.createElement('div');
-            blankDiv.classList.add('day');
+            blankDiv.classList.add('day', 'blank-day');
             calendar.appendChild(blankDiv);
         }
 
@@ -70,22 +69,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Handle previous and next month buttons
     prevMonthButton.addEventListener('click', () => {
-        if (currentMonth === 0) {
-            currentMonth = 11;
-            currentYear--;
-        } else {
-            currentMonth--;
-        }
+        currentMonth = (currentMonth === 0) ? 11 : currentMonth - 1;
+        currentYear = (currentMonth === 11) ? currentYear - 1 : currentYear;
         generateCalendar(currentMonth, currentYear);
     });
 
     nextMonthButton.addEventListener('click', () => {
-        if (currentMonth === 11) {
-            currentMonth = 0;
-            currentYear++;
-        } else {
-            currentMonth++;
-        }
+        currentMonth = (currentMonth === 11) ? 0 : currentMonth + 1;
+        currentYear = (currentMonth === 0) ? currentYear + 1 : currentYear;
         generateCalendar(currentMonth, currentYear);
     });
 

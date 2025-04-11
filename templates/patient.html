@@ -1,4 +1,4 @@
-<!--DOCTYPE html-->
+e<!--DOCTYPE html-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,9 +7,9 @@
     <!--==title========================-->
     <title>Medical Website HTML</title>
     <!--==Fav-icon=====================-->
-    <link rel="shortcut icon" href="images/fav-icon.png">
+    <link rel="shortcut icon" href="/Images/fav-icon.png">
     <!--==CSS==========================-->
-    <link rel="stylesheet" href="patient.css">
+    <link rel="stylesheet" href="/static/css/patient.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!--==Font-Awesome-for-icons=====-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -23,10 +23,6 @@
 <body>
     
     <!--==Hero-Section========================-->
-    <div id="chatbot-container" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
-        <img src="Healthcare_Chatbot-main/Images/bot_icon.png" alt="Chatbot Icon" id="chatbot-icon" style="cursor: pointer; width: 50px; height: 50px;">
-    </div>
-
     <section id="hero">
 
         <!--==navigation====================-->
@@ -63,7 +59,7 @@
             </div>
             <!--**img*****************-->
             <div class="hero-img">
-                <img alt="" src="images/main-bg.jpg">
+                <img alt="" src="/Images/main-bg.png">
             </div>
         </div>
 
@@ -142,7 +138,7 @@
 
         <!--**img**-->
         <div class="our-story-img">
-            <img src="images/story_img.jpg" />
+            <img src="/Images/story_img.jpg" />
             <a href="#" class="story-play-btn">
                 <i class="fa-solid fa-play"></i>
                 Play Video
@@ -378,7 +374,7 @@
                     <div class="team-box">
                         <!--img-->
                         <div class="team-img">
-                            <img alt="" src="images/d1.png">
+                            <img alt="" src="/Images/d1.png">
                         </div>
                         <!--text-->
                         <div class="team-text">
@@ -393,7 +389,7 @@
                     <div class="team-box">
                         <!--img-->
                         <div class="team-img">
-                            <img alt="" src="images/d2.png">
+                            <img alt="" src="/Images/d2.png">
                         </div>
                         <!--text-->
                         <div class="team-text">
@@ -408,7 +404,7 @@
                     <div class="team-box">
                         <!--img-->
                         <div class="team-img">
-                            <img alt="" src="images/d3.png">
+                            <img alt="" src="/Images/d3.png">
                         </div>
                         <!--text-->
                         <div class="team-text">
@@ -423,7 +419,7 @@
                     <div class="team-box">
                         <!--img-->
                         <div class="team-img">
-                            <img alt="" src="images/d4.png">
+                            <img alt="" src="/Images/d4.png">
                         </div>
                         <!--text-->
                         <div class="team-text">
@@ -438,7 +434,7 @@
                     <div class="team-box">
                         <!--img-->
                         <div class="team-img">
-                            <img alt="" src="images/d5.png">
+                            <img alt="" src="/Images/d5.png">
                         </div>
                         <!--text-->
                         <div class="team-text">
@@ -474,7 +470,7 @@
 
             <!--**img************-->
             <div class="testimonials-img">
-                <img alt="" src="images/testimonials-img.png">
+            <img alt="" src="/Images/testimonials-img.png">
             </div>
 
             <!--**box-container**-->
@@ -491,7 +487,7 @@
                     <div class="t-profile">
                         <!--img-->
                         <div class="t-profile-img">
-                            <img alt="" src="images/t1.jpg">
+                            <img alt="" src="/Images/t1.jpg">
                         </div>
                         <!--text-->
                         <div class="t-profile-text">
@@ -519,7 +515,7 @@
                     <div class="t-profile">
                         <!--img-->
                         <div class="t-profile-img">
-                            <img alt="" src="images/t1.jpg">
+                            <img alt="" src="/Images/t1.jpg">
                         </div>
                         <!--text-->
                         <div class="t-profile-text">
@@ -547,7 +543,7 @@
                     <div class="t-profile">
                         <!--img-->
                         <div class="t-profile-img">
-                            <img alt="" src="images/t1.jpg">
+                            <img alt="" src="/Images/t1.jpg">
                         </div>
                         <!--text-->
                         <div class="t-profile-text">
@@ -624,17 +620,17 @@
                     <li><a href="#">Our Product's</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Disclaimer</a></li>
-                    <li><a href="#">Trem's and Condition's</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
                 </ul>
             </div>
             <!--**link-box***-->
             <div class="footer-link-box">
                 <strong>External Link's</strong>
                 <ul>
-                    <li><a href="#">Our Product's</a></li>
+                    <li><a href="#">Our Products</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Disclaimer</a></li>
-                    <li><a href="#">Trem's and Condition's</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
                 </ul>
             </div>
             
@@ -650,14 +646,10 @@
 
 
 
+    <!-- Local JS -->
+<script src="/static/js/script.js"></script>
+    
     <!-- Swiper JS -->
-    <script>
-        document.getElementById('chatbot-icon').onclick = function() {
-            // Code to open the chatbot interface
-            alert('Chatbot functionality will be triggered here.');
-        };
-    </script>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
